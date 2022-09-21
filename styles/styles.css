@@ -1,0 +1,143 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+main{
+    
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container{
+    display: flex;
+    
+    align-items: center;
+    flex-direction: column;
+    background-color: hsl(216, 50%, 16%);
+    width: 310px;
+    height: 550px;
+    border-radius: 12px;
+    box-shadow: 0px 35px 7px 15px hsl(217, 60%, 9%), 0px 35px 5px 35px hsl(217, 64%, 10%);
+    padding: 15px;
+    font-family: "Outfit",sans-serif;
+    justify-content: space-around;
+
+}
+.container_imagen_nft,.imagen_nft {
+    width: 270px;
+    height: 270px;
+    border-radius: 12px;
+}
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 270px;
+    margin-top: 10px;
+}
+.inf_price_days{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+    width: 270px;
+
+    padding-bottom: 13px;
+    border-bottom: 2px solid hsl(215, 32%, 27%)
+}
+.description h2{
+    font-weight: 600;
+    font-size: 24px;
+    color: hsl(0, 0%, 100%)
+}
+.description p, .days_left, .creator{
+    margin-top: 5%;
+    font-weight: 300;
+    font-size: 18px;
+    color: hsl(215, 51%, 70%);
+}
+span{
+    color: hsl(0, 0%, 100%) ;
+}
+.price{
+    font-weight: 400;
+    margin-top: 5%;
+    color: hsl(178, 100%, 50%);
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    justify-content: space-between;
+}
+
+span:hover,h2:hover{
+    color: hsl(178, 100%, 50%);
+}
+.container_imagen_nft{
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+    
+}
+.efecto_hover {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 270px;
+    border-radius: 8px;
+    background-color: hsl(178, 100%, 50%, 0.4);
+    opacity: 0;
+    top: 0;
+}
+.icono_view {
+    width: 40px;
+    position: relative;
+    color: hsl(0, 0%, 100%, 1);
+    opacity: 0;
+}
+.efecto_hover:hover,.icono_view{
+    opacity: 1;
+}
+.price_imagen{
+    object-fit: contain;
+    width: 12px;
+    padding-left: 2px;
+    height: 30px;
+    position: relative;
+    top:-2px;
+}
+
+.days_imagen {
+    width: 24px;
+    height: 24px;
+    padding: 2px;
+}
+
+.days_left{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.creator{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 300px;
+    padding: 15px;
+
+}
+.imagen_creator{
+    width: 30px;
+    border-radius: 50%;
+    border: 2px solid hsl(0, 0%, 100%);
+    margin-right: 10px;
+}
